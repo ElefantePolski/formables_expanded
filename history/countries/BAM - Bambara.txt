@@ -1,0 +1,5 @@
+government = tribal_kingdom
+technology_group = west_african
+religion = shamanism
+primary_culture = bambara
+capital = 1123

@@ -1,0 +1,84 @@
+country_decisions = {
+	reform_great_zimbabwe = {
+		major = yes
+		potential = {
+			NOT = { 
+				tag = ZMB 
+				tag = ROZ
+			}
+			NOT = { has_country_flag = ZimbabweBoiz }
+			OR = {
+				NOT = { exists = ZMB }
+				ai = no
+			}
+			OR = {
+				primary_culture = bemba
+				primary_culture = nyasa
+				primary_culture = shona
+			}
+			capital_scope = {
+				OR = {
+					area = zimbabwe_area
+					area = shire_area
+					area = butua_area
+					area = lower_zambezi_area
+					area = upper_zambezi_area
+					area = quelimane_area
+					area = uticulo_makuana_area
+					area = ngonde_area
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = zimbabwe_area
+				area = butua_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			NOT = { exists = ZMB }
+			is_at_war = no
+			zimbabwe_area = {
+				type = all
+				owned_by = ROOT
+			}
+			butua_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = ZMB
+			set_country_flag = ZimbabweBoiz
+			add_prestige = 25
+			country_event = { id = ideagroups.1 }
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 9125
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 }
+			}
+			ROOT = { set_capital = 1184 }
+			1184 = {
+				add_base_tax = 2 
+				add_base_production = 3
+				add_base_manpower = 2
+				add_building = fort_15th
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

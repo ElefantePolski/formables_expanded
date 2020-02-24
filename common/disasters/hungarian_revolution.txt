@@ -1,0 +1,98 @@
+hungarian_revolution = {
+	potential = {
+		tag = HAB
+		NOT = {
+			has_country_flag = hungary_revolted
+		}
+		OR = {
+			AND = {
+				HUN = {
+					junior_union_with = ROOT
+					development_of_overlord_fraction = 0.50
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 8
+				culture = hungarian
+				unrest = 4
+				local_autonomy = 60
+			}
+		}
+	}
+
+	can_start = {
+		current_age = age_of_revolutions
+		revanchism = 10
+		num_of_loans = 3
+		corruption = 1
+		NOT = {
+			stability = 1
+			legitimacy = 50
+		}
+	}
+
+	can_stop = {
+        has_any_disaster = yes
+	}
+
+	progress = {
+		modifier = {
+			factor = 1
+			OR = {
+				senior_union_with = HUN
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = hungarian
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 3
+			NOT = {
+				legitimacy = 50
+			}
+		}
+	}
+
+	can_end = {
+		OR = {
+			AND = {
+				exists = HUN
+				HUN = {
+					is_subject = no
+				}
+			}
+			AND = {
+				had_country_flag = { flag = hungary_revolted days = 1825 }
+				stability = 2
+				legitimacy = 80
+				
+			}
+		}
+	}
+
+	modifier = {
+		global_unrest = 5
+		legitimacy = -2
+	}
+
+	on_start = FE_hungarian_revolution.1
+	on_end = FE_hungarian_revolution.2
+
+	on_monthly ={
+		random_events = { 
+                1000 = 0
+                50 = FE_hungarian_revolution.3
+                50 = FE_hungarian_revolution.4
+                50 = FE_hungarian_revolution.5
+                50 = FE_hungarian_revolution.6
+                50 = FE_hungarian_revolution.7
+        }
+	}
+}

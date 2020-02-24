@@ -1,0 +1,203 @@
+namespace = FE_burgundy
+
+country_event = {
+	id = FE_burgundy.1
+	title = FE_burgundy.1.t
+	desc = FE_burgundy.1.d
+	picture = HRE_eventPicture
+
+	trigger = {
+		is_at_war = no
+		tag = BUR
+		burgundy_area = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FE_burgundy.1.a
+
+		romandie_area = { add_core = ROOT }
+		reverse_add_opinion = {
+    		who = emperor
+    		modifier = bur_pressed_claims
+		}
+		every_country = {
+			add_opinion = {
+    			who = FROM
+    			modifier = bur_member_claims
+			}
+			limit = { is_part_of_hre = yes }
+		}
+		set_country_flag = upper_burgundy_flag
+		custom_tooltip = FE_burgundy_tooltip1
+	}
+	option = {
+		name = FE_burgundy.1.b
+
+		savoy_dauphine_area = {
+			add_core = ROOT
+			limit = { is_part_of_hre = no }
+		}
+		provence_area = {
+			add_core = ROOT
+			limit = { is_part_of_hre = no }
+		}
+		reverse_add_opinion = {
+			who = FRA
+			modifier = bur_pressed_claims
+		}
+		set_country_flag = lower_burgundy_flag
+		custom_tooltip = FE_burgundy_tooltip2
+	}
+	option = {
+		name = FE_burgundy.1.c
+
+		add_prestige = -5
+		custom_tooltip = FE_burgundy_tooltip3
+	}
+
+	fire_only_once = yes
+}
+
+country_event = {
+	id = FE_burgundy.2
+	title = FE_burgundy.2.t
+	desc = FE_burgundy.2.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FE_burgundy.2.a
+
+		emperor = {
+			country_event = { 
+    			id = FE_burgundy.3
+    			random = 15
+   				tooltip = FE_burgundy_tooltip5
+			}
+		}
+	}
+	option = {
+		name = FE_burgundy.2.b
+		lower_rhineland_area = { add_permanent_claim = ROOT }
+		custom_tooltip = FE_burgundy_tooltip6
+	}
+}
+
+country_event = {
+	id = FE_burgundy.3
+	title = FE_burgundy.3.t
+	desc = FE_burgundy.3.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FE_burgundy.3.a
+
+		ai_chance = { factor = 100 }
+
+		TRI = {
+			country_event = { 
+    			id = FE_burgundy.4
+    			random = 15
+   				tooltip = FE_burgundy_tooltip4
+			}
+		}
+	}
+	option = {
+		name = FE_burgundy.3.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = FE_burgundy.4
+	title = FE_burgundy.4.t
+	desc = FE_burgundy.4.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FE_burgundy.4.a
+
+		ai_chance = { factor = 100 }
+
+		TRI = {
+			every_owned_province = { 
+				add_core = LBU
+				cede_province = LBU
+			}
+		}
+		LBU = { 
+			set_in_empire = yes
+			elector = yes
+			set_government_rank = 2
+		}
+	}
+	option = {
+		name = FE_burgundy.4.b
+		reverse_add_casus_belli = {
+    		target = LBU
+    		type = cb_vassalize_mission
+    		months = 24
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = FE_burgundy.5
+	title = FE_burgundy.5.t
+	desc = FE_burgundy.5.d
+	picture = REVOLUTION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = LBU
+		FLA = { 
+			exists = yes
+			is_part_of_hre = no
+			junior_union_with = ROOT
+			ai = yes
+		}
+		FRA = {
+			num_of_cities = 15
+			NOT = {
+				num_of_loans = 3
+				war_exhaustion = 2
+				is_bankrupt = yes
+				is_enemy = FLA
+			}
+		}
+		has_country_flag = bur1
+		has_country_flag = bur2
+	}
+
+	immediate = {
+		hidden_effect = {
+			FLA = {
+				grant_independence = yes
+				create_alliance = FRA
+				add_treasury = 50
+				add_manpower = 10
+				add_war_exhaustion = -2
+			}
+		}
+	}
+
+	option = {
+		name = FE_burgundy.5.a
+
+		declare_war_with_cb = {
+   			who = FLA
+    		casus_belli = cb_restore_personal_union
+		}
+	}
+}

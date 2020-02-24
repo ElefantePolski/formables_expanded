@@ -1,0 +1,6 @@
+# Audax Validator "!" Ignore_1006
+#Country Name: Please see filename.
+
+graphical_culture = africangfx
+
+color = { 77  170  72 }

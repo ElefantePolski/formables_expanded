@@ -1,0 +1,95 @@
+namespace = FE_soyuz
+
+country_event = {
+	id = FE_soyuz.1
+	title = FE_soyuz.1.t
+	desc = FE_soyuz.1.d
+	picture = COMMUNISM_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = RUS
+			tag = DTT
+		}
+		age = age_of_revolutions
+		if = {
+			limit = { tag = DTT }
+			295 = { owned_by = DTT }
+		}
+		80 = { enlightenment = 100 }
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = commies_on_their_way_flag
+		}
+	}
+
+	option = {
+		name = FE_soyuz.1.a
+		capital_scope = {
+				add_unrest = 10
+		}
+	}
+}
+
+country_event = {
+	id = FE_soyuz.2
+	title = FE_soyuz.2.t
+	desc = FE_soyuz.2.d
+	picture = COMMUNISM_eventPicture
+	fire_only_once = yes
+
+
+	trigger = {
+		has_global_flag = commies_on_their_way_flag
+		OR = {
+			tag = RUS
+			tag = DTT
+		}
+		age = age_of_revolutions
+		if = {
+			limit = { tag = DTT }
+			295 = { owned_by = DTT }
+		}
+		year = 1810
+		average_unrest = 5
+		num_of_loans = 15
+		is_at_war = yes
+		NOT = { stability = 0 }
+
+		government = monarchy
+	}
+
+	option = {
+		name = FE_soyuz.2.a
+
+		every_owned_province = {
+			limit = { 
+				OR = {
+					region = scandinavia_region 
+					region = ruthenia_region
+					region = baltic_region
+					region = poland_region
+				}
+			}
+			nationalist_rebels = 8
+		}
+		add_stability = -6
+		add_legitimacy = -100
+	}
+
+	option = {
+		name = FE_soyuz.2.b
+
+		add_government_reform = soviet_reform
+		change_tag = USS
+		add_stability = -2
+		add_legitimacy = -50
+	}
+}

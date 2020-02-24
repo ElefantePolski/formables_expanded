@@ -1,0 +1,7 @@
+government = absolute_monarchy
+mercantilism = 10
+technology_group = western
+religion = catholic
+primary_culture = burgundian
+add_accepted_culture = occitan
+capital = 192

@@ -1,0 +1,66 @@
+country_decisions = {
+	form_madagascar = {
+		potential = {
+			OR = {
+				tag = SKA
+				tag = MIR
+				tag = BTS
+				tag = ANT
+				tag = MFY
+			}
+			NOT = {
+				has_country_flag = "formed_madagascar"
+			}
+		}
+
+		major = yes
+
+		provinces_to_highlight = {
+			OR = {
+				area = sakalava_area
+				area = betsimasaraka_area
+				area = madagascar_highlands_area
+				area = southern_madagascar
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		allow = {
+			stability = 0
+			sakalava_area = {
+				owned_by = ROOT
+			}
+			betsimasaraka_area = {
+				owned_by = ROOT
+			}
+			madagascar_highlands_area = {
+				owned_by = ROOT
+			}
+			southern_madagascar = {
+				owned_by = ROOT
+			}
+			is_at_war = no
+		}
+
+		effect = {
+			set_country_flag = "formed_madagascar"
+			country_event = { id = ideagroups.1 }
+			add_prestige = 25
+			change_tag = KMA
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 9125
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

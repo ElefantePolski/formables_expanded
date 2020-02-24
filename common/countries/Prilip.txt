@@ -1,0 +1,14 @@
+# Audax Validator "!" Ignore_1006
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 193  37  217 }
+
+army_names = {
+	"Army of King Marko"
+}
+
+monarch_names = {
+	"Marko #4" = 100
+}

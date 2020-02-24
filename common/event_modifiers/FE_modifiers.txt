@@ -1,0 +1,13 @@
+hungarian_revolution_provinces = {
+	min_autonomy = 0.95
+	regiment_recruit_speed = -0.50
+}
+hungarian_revolution_tax_loss = {
+	global_tax_modifier = -0.2
+}
+hungarian_revolution_unhappy_nobility = {
+	local_manpower_modifier = -0.75
+}
+burgundian_forcibly_integrate = {
+	 	diplomatic_reputation = -4
+}

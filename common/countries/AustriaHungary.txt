@@ -1,0 +1,19 @@
+# Audax Validator "!" Ignore_1006
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 255  255  255 }
+
+army_names = {
+	"Common Army"
+	"Imperial-Royal Landwehr"
+	"Royal Hungarian Landwehr"
+	"Imperial Army"
+	"Black Army"
+}
+
+fleet_names = {
+	"Kriegsmarine"
+	"Imperial and Royal War Navy"
+}

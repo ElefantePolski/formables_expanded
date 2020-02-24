@@ -1,0 +1,47 @@
+﻿l_english:
+  FE_burgundy.1.t: "Legacy of Lotharingia"
+  FE_burgundy.1.d: "We find ourselves in a unique position as the only nation with a true claim to the legacy of Lotharingia. Despite the Carolingian Empire's downfall, its memory lives on, as well as the pretige that comes with this title. The Holy Roman Emperor has given us permission to pursue territorial consolidation of Lotharingian lands, provided we steer clear of the Empire itself. Should we act upon these claims?"
+  FE_burgundy.1.a: "To hell with the Empire! Agitate the claims!"
+  FE_burgundy.1.b: "We will heed the Emperor's warning... for now."
+  FE_burgundy.1.c: "Duke of Burgundy is a worthy title on its own."
+
+  FE_burgundy.2.t: "Holy Roman Membership"
+  FE_burgundy.2.d: "Should we wish to fulfill our wishes of uniting Lotharingia, aligning ourselves with the Holy Roman Empire may be to our advantage. It would provide additional legitimacy in our endeavour, and make expanding into Germanic lands far easier. After all, the Empire is simply Charlemagne's backyard."
+  FE_burgundy.2.a: "Let us join the Empire."
+  FE_burgundy.2.b: "The Empire is simply our backyard."
+
+  FE_burgundy.3.t: "Burgundian Proposal"
+  FE_burgundy.3.d: "The resurgent Burgundians have offered an interesting proposal. In exchange for the throne of Trier, they are willing to pledge loyalty to the Empire, joining it completely. Though slightly worrying, another member-state cannot upset the balance too much."
+  FE_burgundy.3.a: "Agree to their terms."
+  FE_burgundy.3.b: "We would never trust a Frank."
+
+  FE_burgundy.4.t: "Burgundy Demands Submission"
+  FE_burgundy.4.d: "The resurgent Burgundians, using an ancient Lotharingian claim, has demanded our complete annexation into their realm. Accepting such a prepostorous proposition would end our suzerainty as a whole..."
+  FE_burgundy.4.a: "Accept, for either way we shall fall."
+  FE_burgundy.4.b: "Decline; we cannot give up without a fight!"
+
+  FE_burgundy.5.t: "Flemish Revolution"
+  FE_burgundy.5.d: "Our recent aggression in the Lowlands has led to our Flemish subjects growing nervous--so much so that they sought the support of France in an independence war. They are ready to die for this cause; we must be prepared to do the same."
+  FE_burgundy.5.a: "They will regret their transgressions..."
+
+  #decisions
+  FE_upper_burgundy_decision_title: "Restore Upper Burgundy"
+  FE_upper_burgundy_decision_desc: "We have fought and bled to claim the legacy of Lotharingia; this is a good first step. Proclaiming ourselves as the Duchy of Upper Burgundy will allow us some additional legitimacy in that regard."
+  FE_lower_burgundy_decision_title: "Restore Lower Burgundy"
+  FE_lower_burgundy_decision_desc: "We have fought and bled to claim the legacy of Lotharingia; this is a good firs tstep. Proclaiming ourselves as the Duhcy of Lower Burgundy will allow us some additional legitimacy in that regard."
+  FE_burgundy_brabant_decision_title: "Forcibly Integrate Brabant"
+  FE_burgundy_brabant_decision_desc: "We cannot wait for the regional governors of Brabant to decide on their true allegiances. We must make haste to integrate these vital territories!"
+  FE_burgundy_holland_decision_title: "Forcibly Integrate Holland"
+  FE_burgundy_holland_decision_desc: "The Dutch have been granted far too much autonomy. We must wrest control from these drunken Germans and unite our lands as they were meant to be."
+
+  #tooltips
+  FE_burgundy_tooltip1: "§GWe will attempt to restore the Duchy of Upper Burgundy. This will anger the Emperor.§!"
+  FE_burgundy_tooltip2: "§GWe will attempt to restore the Duchy of Lower Burgundy. This will anger France.§!"
+  FE_burgundy_tooltip3: "§RThere will not be another chance to form Lotharingia."
+  FE_burgundy_tooltip4: "Accept the proposal. If Trier accepts as well, Lower Burgundy will become an elector."
+  FE_burgundy_tooltip5: "We will propose our offer to Trier and Austria. Should they both accept, we will enter the empire as an elector."
+  FE_burgundy_tooltip6: "§GYou can still form Lotharingia outside of the Empire."
+
+  #opinion modifiers
+  bur_pressed_claims: "Pressed Imperial Claims"
+  bur_member_claims: "Pressed Imperial Claims"

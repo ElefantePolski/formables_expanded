@@ -1,0 +1,5 @@
+government = dictatorship
+technology_group = eastern
+religion = shamanism
+primary_culture = shona
+capital = 1184

@@ -1,0 +1,241 @@
+namespace = FE_hungarian_revolution
+
+country_event = {
+	id = FE_hungarian_revolution.1
+	title = FE_hungarian_revolution.1.t
+	desc = FE_hungarian_revolution.1.d
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FE_hungarian_revolution.1.a
+
+		set_country_flag = hungary_revolted
+
+		if = {
+			limit = {
+				153 = {
+					owned_by = ROOT
+				}
+			}
+
+			153 = {
+				nationalist_rebels = 2
+			}
+		}
+
+		134 = {
+			noble_rebels = 3
+		}
+
+		random_province = {
+			limit = {
+				culture = hungarian
+			}
+			nationalist = 1
+		}
+	}
+
+	option = {
+		name = FE_hungarian_revolution.1.b
+
+		add_prestige = -100
+		every_owned_province = {
+			limit = {
+				culture_group = carpathian
+			}
+			cede_province = HUN
+			remove_core = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = FE_hungarian_revolution.2
+	title = FE_hungarian_revolution.2.t
+	desc = FE_hungarian_revolution.2.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FE_hungarian_revolution.2.a
+
+		every_owned_province = {
+			limit = {
+				culture_group = carpathian
+				OR = {
+					owned_by = HAB
+					owned_by = HUN
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						ROOT = {
+							has_global_flag = governments_expanded_mod_active
+							has_global_flag = governments_exapanded_mod_active
+						}
+					}
+				}
+				add_province_modifier = {
+					name = "hungarian_revolution_provinces"
+					duration = -1
+				}
+			}
+			else = {
+				# Jay's reform
+			}
+			cede_province = ROOT
+		}
+		change_tag = AUH
+		country_event = { 
+    		id = ideagroups.1
+		}
+	}
+
+	option = {
+		name = FE_hungarian_revolution.2.b
+
+		capital_scope = {
+			noble_rebels = 4
+		}
+		random_owned_province = {
+			limit = {
+				culture = austrian
+			}
+			noble_rebels = 2
+		}
+		random_owned_province = {
+			limit = {
+				culture = hungarian
+			}
+			nationalist_rebels = 3
+		}
+		every_owned_province = {
+			limit = {
+				culture_group = carpathian
+			}
+			nationalist_rebels = 1
+		}
+	}
+}
+
+country_event = {
+	id = FE_hungarian_revolution.3
+	title = FE_hungarian_revolution.3.t
+	desc = FE_hungarian_revolution.3.d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FE_hungarian_revolution.3.a
+
+		add_stability = -1
+		random_owned_province = {
+			limit = {
+				culture = croatian
+			}
+			noble_rebels = 2
+		}
+	}
+}
+
+country_event = {
+	id = FE_hungarian_revolution.4
+	title = FE_hungarian_revolution.4.t
+	desc = FE_hungarian_revolution.4.d
+	picture = MILITARY_CAMP_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FE_hungarian_revolution.4.a
+
+		random_owned_province = {
+			limit = {
+				culture = slovak
+			}
+			nationalist_rebels = 2
+		}
+		random_owned_province = {
+			limit = {
+				culture = transylvanian
+			}
+			nationalist_rebels = 2
+		}
+	}
+}
+
+country_event = {
+	id = FE_hungarian_revolution.5
+	title = FE_hungarian_revolution.5.t
+	desc = FE_hungarian_revolution.5.d
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FE_hungarian_revolution.5.a
+
+		random_owned_province = {
+			limit = {
+				culture = hungarian
+			}
+			nationalist_rebels = 2
+		}
+	}
+}
+
+country_event = {
+	id = FE_hungarian_revolution.6
+	title = FE_hungarian_revolution.6.t
+	desc = FE_hungarian_revolution.6.d
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FE_hungarian_revolution.6.a
+
+		random_owned_province = {
+			limit = {
+				culture = austrian
+			}
+			nationalist_rebels = 1
+		}
+	}
+	option = {
+		name = FE_hungarian_revolution.6.b
+
+		add_country_modifier = {
+			name = "hungarian_revolution_tax_loss"
+			duration = 1095
+		}
+	}
+}
+
+country = {
+	id = FE_hungarian_revolution.7
+	title = FE_hungarian_revolution.7.t
+	desc = FE_hungarian_revolution.7.d
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FE_hungarian_revolution.7.a
+
+		random_owned_province = {
+			limit = {
+				culture = austrian
+			}
+			add_province_modifier = {
+				name = "hungarian_revolution_unhappy_nobility"
+				duration = 1095
+			}
+		}
+	}
+}

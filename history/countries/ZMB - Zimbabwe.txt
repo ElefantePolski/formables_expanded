@@ -1,0 +1,5 @@
+government = monarchy
+technology_group = central_african
+religion = shamanism
+primary_culture = shona
+capital = 1184

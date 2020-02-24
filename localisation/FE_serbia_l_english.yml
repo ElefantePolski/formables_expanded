@@ -1,0 +1,12 @@
+﻿l_english:
+  FE_serbia.1.t: "Dissolution of Serbia"
+  FE_serbia.1.desc: "Despite attempts at restoring the Serbian Empire, the land of Serbia remains a decentralized and minor nation on the European stage. Facing imminent invasion from the Hungarians and Ottomans, the pressure is building up beyond the point of return. This has all been made far worse with the death of the late Despot, [FRA.Monarch.GetName]. His tragic assassination has set into motion the collapse of Serbia, just as the death of Uros V ended the Empire. Local lords are breaking off from centralized rule by the day. The only hope left lies in these new principalities."
+  FE_serbia.1.a: "We shall remain unchanged!"
+  FE_serbia.1.b: "The Zetans have immense potential."
+  FE_serbia.1.c: "We shall restore the empire of King Markos!"
+  FE_serbia.1.d: "Prince Velbazhd is the best choice."
+  FE_serbia.1.e: "We require the strength of Prince Lazar."
+
+  # decisions
+  form_serbian_empire_title: "Restore the Serbian Empire"
+  form_serbian_empire_desc: "A grand empire that ruled over Serbs, Albanians, and Greeks alike, the Serbian Empire spanned over parts of what is now owned by the Ottomans."

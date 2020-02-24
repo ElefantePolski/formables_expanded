@@ -1,0 +1,20 @@
+FE_soviet_reform = {
+	monarchy = yes
+	heir = no
+	queen = no
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	modifiers = {
+		global_unrest = -1
+		global_manpower_modifier = 0.3
+		unjustified_demands = -0.2
+		reduced_liberty_desire_on_same_continent = -10
+	}
+	potential = {
+		tag = USS
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}

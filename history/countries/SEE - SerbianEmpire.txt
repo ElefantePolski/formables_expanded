@@ -1,0 +1,7 @@
+government = absolute_monarchy
+mercantilism = 10
+technology_group = western
+religion = catholic
+primary_culture = serbian
+add_accepted_culture = greek
+capital = 4239

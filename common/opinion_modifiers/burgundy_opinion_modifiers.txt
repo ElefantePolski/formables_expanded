@@ -1,0 +1,8 @@
+bur_pressed_claims = {
+	opinion = -200
+	yearly_decay = 0.5
+}
+bur_member_claims = {
+	opinion = -20
+	yearly_decay = -1
+}

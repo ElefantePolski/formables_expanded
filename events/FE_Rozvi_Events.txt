@@ -1,0 +1,106 @@
+namespace = FE_rozvi
+
+country_event = {
+	id = FE_rozvi.1
+	title = FE_rozvi.1.t
+	desc = FE_rozvi.1.desc
+	picture = KING_SICK_IN_BED_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = ZIM
+			tag = ZMB
+		}
+		OR = {
+			age = age_of_discovery
+			age = age_of_reformation
+		}
+		butua_area = {
+			type = all
+			owned_by = ROOT
+		}
+		NOT = { has_ruler_flag = StableRuler }
+		num_of_cities = 7
+		average_unrest = 0
+		average_home_autonomy = 25
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	immediate = {
+		hidden_effect = {
+			1185 = { add_core = ROZ }
+			1189 = { add_core = ROZ }
+			1188 = { add_core = ROZ }
+			release = ROZ
+			1188 = { infantry = ROZ }
+			1188 = { infantry = ROZ }
+			1188 = { infantry = ROZ }
+			1188 = { infantry = ROZ }
+			1188 = { infantry = ROZ }
+			1188 = { infantry = ROZ }
+			1188 = { cavalry = ROZ }
+			1188 = { cavalry = ROZ }
+			ROZ = {
+				change_religion = shamanism
+				add_government_reform = tribal_kingdom
+				set_government_rank = 2
+				add_treasury = 50
+				south_africa_region = {
+    				discover_country = ROZ
+    				if = {
+    					limit = {
+    						ZIM = { exists = yes }
+    					}
+    					discover_country = ZIM
+    				}
+				}
+				east_africa_region = { discover_country = ROZ }
+				add_manpower = 5
+				change_primary_culture = shona
+				add_legitimacy = 40
+				change_technology_group = central_african
+				change_unit_type = african
+			}
+		}
+	}
+
+	option = {
+		name = FE_rozvi.1.a
+		declare_war_with_cb = {
+    		who = ROZ
+    		casus_belli = cb_annex
+		}
+	}
+
+	option = {
+		name = FE_rozvi.1.b
+		declare_war_with_cb = {
+    		who = ROZ
+    		casus_belli = cb_annex
+		}
+		switch_tag = ROZ
+	}
+}
+
+country_event = {
+	id = FE_rozvi.2
+
+	trigger = {
+		NOT = { has_ruler_flag = StableRuler }
+		adm = 3
+		OR = {
+			tag = ZIM
+			tag = ZMB
+		}
+	}
+
+	hidden = yes
+
+	immediate = {
+		hidden_effect = { set_ruler_flag = StableRuler }
+	}
+}

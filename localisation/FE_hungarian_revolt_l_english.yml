@@ -1,0 +1,31 @@
+﻿l_english:
+  FE_hungarian_revolution.1.t: "The Hungarian Revolution"
+  FE_hungarian_revolution.1.d: "Ever since the formal integration of Hungary into the Austrian Empire, the Hungarians have lacked any form of representation in the government at a national level. With repeated losses against Prussia and France, the Hungarians grew discontented with their incompetent rulers, and finally rose up in 1848. The revolution resulted in a brutal quahsing of rebel forces by a joint Austro-Russian army, though the Hungarians did manage to gain power through the Compromise of 1867, resulting in a Dual Monarchy."
+  FE_hungarian_revolution.1.a: "They must know their place!"
+  FE_hungarian_revolution.1.b: "We cannot afford to quash such a rebellion."
+  FE_hungarian_revolution.2.t: "The Compromise"
+  FE_hungarian_revolution.2.d: "Both the Austrian and Hungarian peoples find themselves exhausted from years of bloody conflict. Both sides will fall before long, which would be beneficial to neither party. Our diplomats have proposed terms that the Hungarians agreed to: a Dual Monarchy. Our Carpathian holdings will be ruled by an autonomous king, while an Emperor presides over Austria. Perhaps this is for the best."
+  FE_hungarian_revolution.2.a: "Anything to end the bloodshed."
+  FE_hungarian_revolution.2.b: "Don't give them an inch."
+  FE_hungarian_revolution.3.t: "Diplomat Assassinated"
+  FE_hungarian_revolution.3.d: "While traveling through Croatia, one of our main diplomats suffered a fatal shot to the head at the hands of a Croatian nationalist, obviously receiving support from the local nobility."
+  FE_hungarian_revolution.3.a: "Let us be thankful our Arch-Duke is safe."
+  FE_hungarian_revolution.4.t: "Border Revolts"
+  FE_hungarian_revolution.4.d: "In a previously unfathomable act of cooperation, the Transylvanians and Slovaks of our grand nation have risen up in support of the Hungarian separatism movement. It would seem as though our enemies are far more widespread than originally assumed."
+  FE_hungarian_revolution.4.a: "Ungrateful swines!"
+  FE_hungarian_revolution.5.t: "Hungarian Peasants Rise"
+  FE_hungarian_revolution.5.d: "The Hungarian peasantry, spurred on by high taxes and conscription, have risen up in protest against increased drafting, no doubt angry that they are being forced to fight their countrymen. They have been indoctrinated to the notion that we are the enemy, and now support the separatist movement."
+  FE_hungarian_revolution.5.a: "Send in the troops."
+  FE_hungarian_revolution.6.t: "Angered Peasantry"
+  FE_hungarian_revolution.6.d: "With the war against Hungary in full swing, taxes on the serfs are higher than ever. Though we expected periodic protests, the peasantry has exceeded all expectations and risen up in revolt!"
+  FE_hungarian_revolution.6.a: "Damn those serfs!"
+  FE_hungarian_revolution.6.b: "Give them what they want..."
+
+
+  # disaster
+  hungarian_revolution: "Hungarian Revolution"
+  desc_hungarian_revolution: "The Hungarians are in a state of complete warfare against our government."
+
+  #modifiers
+  hungarian_revolution_provinces: "Decentralized Rule"
+  hungarian_revolution_tax_loss: "Reversed War Taxes"

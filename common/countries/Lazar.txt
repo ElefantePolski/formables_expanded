@@ -1,0 +1,10 @@
+# Audax Validator "!" Ignore_1006
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 87  125  41 }
+
+monarch_names = {
+	"Lazar" = 100
+}

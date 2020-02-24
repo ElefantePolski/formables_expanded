@@ -1,0 +1,178 @@
+country_decisions = {
+	FE_upper_burgundy_decision = {
+		major = yes
+		potential = { has_country_flag = upper_burgundy_flag }
+		provinces_to_highlight = {
+			OR = {
+				area = romandie_area
+				area = burgundy_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = UPB }
+			burgundy_area = { country_or_non_sovereign_subject_holds = ROOT }
+			romandie_area = { 
+				owned_by = ROOT
+				type = all
+			}
+		}
+		effect = {
+			change_tag = UPB
+			set_country_flag = formed_UPB
+			add_prestige = 15
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 9125
+			}
+			clr_country_flag = upper_burgundy_flag
+			clr_country_flag = lower_burgundy_flag
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	FE_lower_burgundy_decision = {
+		major = yes
+		potential = { has_country_flag = lower_burgundy_flag }
+		provinces_to_highlight = {
+			OR = {
+				area = savoy_and_dauphine_area
+				area = burgundy_area
+				area = provence_area
+			}
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				is_part_of_hre = yes
+			}
+		}
+		allow = {
+			NOT = { exists = UPB }
+			burgundy_area = { country_or_non_sovereign_subject_holds = ROOT }
+			is_at_war = no
+			savoy_dauphine_area = { 
+				OR = {
+					owned_by = ROOT
+					is_part_of_hre = yes
+				}
+				type = all
+			}
+			provence_area = {
+				OR = {
+					owned_by = ROOT
+					is_part_of_hre = yes
+				}
+				type = all
+			}
+		}
+		effect = {
+			change_tag = LBU
+			set_country_flag = formed_LBU
+			add_prestige = 15
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 9125
+			}
+			clr_country_flag = upper_burgundy_flag
+			clr_country_flag = lower_burgundy_flag
+			if = {
+				limit = {
+					hre_size = 1
+					TRI = {
+						exists = yes
+						ai = yes
+						is_part_of_hre = yes
+						is_elector = yes
+						NOT = { num_of_cities = 4 }
+					}
+				}
+				country_event = { id = FE_burgundy.2 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	FE_burgundy_brabant_decision = {
+		major = yes
+		potential = {
+			OR = {
+				tag = LBU
+				tag = UPB
+			}
+			80 = { owned_by = ROOT }
+			BRB = { 
+				junior_union_with = ROOT
+				owns = 92
+			}
+		}
+		allow = {
+			diplomatic_reputation = -1
+			is_at_war = no
+			BRB = {
+				NOT = {
+					liberty_desire = 50
+					num_of_cities = 5
+				}
+				ai = yes
+			}
+		}
+		effect = {
+			BRB = {
+				every_owned_province = { cede_province = ROOT }
+			}
+			add_country_modifier = {
+				name = "burgundian_forcibly_integrate"
+				duration = 7300
+			}
+			set_country_flag = bur1
+		}
+	}
+
+	FE_burgundy_holland_decision = {
+		major = yes
+		potential = {
+			OR = {
+				tag = LBU
+				tag = UPB
+			}
+			80 = { owned_by = ROOT }
+			HOL = { 
+				junior_union_with = ROOT
+				owns = 97
+			}
+		}
+		allow = {
+			diplomatic_reputation = -1
+			is_at_war = no
+			HOL = {
+				NOT = {
+					liberty_desire = 50
+					num_of_cities = 5
+				}
+				ai = yes
+			}
+		}
+		effect = {
+			HOL = {
+				every_owned_province = { cede_province = ROOT }
+			}
+			add_country_modifier = {
+				name = "burgundian_forcibly_integrate"
+				duration = 7300
+			}
+			set_country_flag = bur2
+		}
+	}
+}

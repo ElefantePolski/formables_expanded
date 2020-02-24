@@ -1,0 +1,20 @@
+﻿l_english:
+  FE_soyuz.1.t: "Works of Karl Marx"
+  FE_soyuz.1.d: "Karl Marx, born in the Prussian city of Trier in 1818, is a name that needs no introduction. His criticisms of capitalism left a scorching and scathing legacy surmounted by revolution and the eventual foundation of the Soviet Union, highlighting his philosophy's flaws in the Holodomr. However, socialism and communism were dilectably tantalizing ideologies for the abused serfs of early-modern Europe."
+  FE_soyuz.1.a: "Good thing peasants can't read!"
+
+  FE_soyuz.2.t: "Rise of the People's Army"
+  FE_soyuz.2.d: "It appears as though the ideals of Karl Marx have spread! The peasantry is in open revolt, demanding we dissolve the Tsarist regime in favor of a people's republic... whatever that means. Backed by foreign aid, it appears as though the revolution may overturn the nation as we know it."
+  FE_soyuz.2.a: "We must defend the Tsar!"
+  FE_soyuz.2.b: "Bend to their wishes."
+
+  FE_soviet_reform: "Union of Soviet Socialist Republic"
+  FE_soviet_reform_desc: "The Union of Soviet Socialist Republics, established in 1917, was founded on the principle of collectivation and liberation of the working class. Though it quickly devolved to tyranny, during its prime, it was an efficient and absolute system of governance."
+
+  Soviet_Republic: "Soviet Republic"
+  Grand_Soviet_Republic: "Grand Soviet Republic"
+  Soviet_Empire: "Soviet Empire"
+  SOVIET_DICTATOR: "Soviet Dictator"
+  VOZHD: "Vozhd"
+  GRAND_VOZHD: "Vozhd"
+  SOV_fem: "Vozhdette"

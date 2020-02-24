@@ -1,0 +1,5 @@
+government = monarchy
+technology_group = muslim
+religion = shiite
+primary_culture = persian
+capital = 428

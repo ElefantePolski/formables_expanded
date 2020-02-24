@@ -1,0 +1,218 @@
+namespace = FE_serbia
+
+country_event = {
+	id = FE_serbia.1
+	title = FE_serbia.1.t
+	desc = FE_serbia.1.desc
+	picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = SER
+		NOT = {
+			stability = 1
+			num_of_owned_provinces_with = {
+				value = 8
+				culture = serbian
+			}
+		}
+		average_autonomy = 30
+		age = age_of_discovery
+		is_year = 1445
+		NOT = {
+			is_year = 1450
+		}
+		rascia_area = {
+			type = all
+			owned_by = ROOT
+		}
+		141 = { owned_by = ROOT }
+		4176 = { owned_by = ROOT }
+		3000 = { owned_by = ROOT }
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	immediate = {
+		hidden_effect = {
+			138 = {
+				add_core = ZET
+				cede_province = ZET
+			}
+			ZET = {
+				change_religion = orthodox
+				change_government = monarchy
+				set_government_rank = 1
+				add_treasury = 50
+				europe = {
+    				discover_country = ZET
+				}
+				add_manpower = 5
+				change_primary_culture = serbian
+				add_legitimacy = 40
+				change_technology_group = eastern
+				change_unit_type = eastern
+			}
+			3000 = {
+				add_core = VEL
+				cede_province = VEL
+			}
+			VEL = {
+				change_religion = orthodox
+				change_government = monarchy
+				set_government_rank = 1
+				add_treasury = 50
+				europe = {
+    				discover_country = VEL
+				}
+				add_manpower = 5
+				change_primary_culture = serbian
+				add_legitimacy = 40
+				change_technology_group = eastern
+				change_unit_type = eastern
+			}
+			141 = {
+				add_core = LAZ
+				cede_province = LAZ
+			}
+			4176 = {
+				add_core = LAZ
+				cede_province = LAZ
+			}
+			LAZ = {
+				change_religion = orthodox
+				change_government = monarchy
+				set_government_rank = 1
+				add_treasury = 50
+				europe = {
+    				discover_country = LAZ
+				}
+				add_manpower = 5
+				change_primary_culture = serbian
+				add_legitimacy = 40
+				change_technology_group = eastern
+				change_unit_type = eastern
+			}
+			if = {
+				limit = {
+					3001 = {
+						owned_by = ROOT
+						culture = serbian
+					}
+				}
+				3001 = {
+					add_core = PRI
+					cede_province = PRI
+				}
+				PRI = {
+					change_religion = orthodox
+					change_government = monarchy
+					set_government_rank = 1
+					add_treasury = 50
+					europe = {
+    					discover_country = PRI
+					}
+					add_manpower = 5
+					change_primary_culture = serbian
+					add_legitimacy = 40
+					change_technology_group = eastern
+					change_unit_type = eastern
+				}
+				ROOT = {
+					add_truce_with = PRI
+				}
+			}
+			ROOT = {
+				change_government = monarchy
+				set_government_rank = 1
+				set_country_flag = "Serbja"
+				add_truce_with = LAZ
+				add_truce_with = ZET
+				add_truce_with = VEL
+			}
+			TUR = {
+				add_truce_with = LAZ
+				add_truce_with = ZET
+				add_truce_with = VEL
+				add_truce_with = SER
+				add_truce_with = PRI
+			}
+		}
+	}
+
+	option = {
+		name = FE_serbia.1.a
+		#serbia
+
+		serbia_area = {
+			add_core = ROOT
+		}
+		rascia_area = {
+			add_core = ROOT
+		}
+	}
+
+	option = {
+		name = FE_serbia.1.b
+		#zeta
+		switch_tag = ZET
+
+		serbia_area = {
+			add_core = ZET
+		}
+		rascia_area = {
+			add_core = ZET
+		}
+	}
+
+	option = {
+		name = FE_serbia.1.c
+
+		trigger = {
+			3001 = {
+				OR = {
+					owned_by = ROOT
+					owned_by = PRI
+				}
+			}
+		}
+
+		#prilip
+		switch_tag = PRI
+
+		serbia_area = {
+			add_core = PRI
+		}
+		rascia_area = {
+			add_core = PRI
+		}
+	}
+
+	option = {
+		name = FE_serbia.1.d
+		#velbazhd
+		switch_tag = VEL
+
+		serbia_area = {
+			add_core = VEL
+		}
+		rascia_area = {
+			add_core = VEL
+		}
+	}
+
+	option = {
+		name = FE_serbia.1.e
+		#lazar
+		switch_tag = LAZ
+		
+		serbia_area = {
+			add_core = LAZ
+		}
+		rascia_area = {
+			add_core = LAZ
+		}
+	}
+}

@@ -1,0 +1,441 @@
+IRA_ideas = {
+    start = {
+        land_forcelimit_modifier = 0.25
+        defensiveness = 0.25
+    }
+
+    bonus = {
+        num_accepted_cultures = 1
+    }
+
+    trigger = {
+        tag = IRA
+    }
+
+    free = yes        #will be added at load.
+
+    land_of_mountains_and_deserts = {
+        hostile_attrition = 1
+    }
+    spreading_persian_culture = {  #Persian culture was spread to various places, especially India, by various Persian famlies and dynasties
+        diplomatic_reputation = 1
+    }
+    history_of_conquest_and_empires = {
+        core_creation = -0.15
+    }
+    the_silk_road_revival = {  #Places like Samarkand, Tehran, and Baghdad being signficant places along the Silk Road
+        trade_efficiency = 0.10
+        caravan_power = 0.25
+    }
+    more_than_a_match = {
+        discipline = 0.05
+    }
+    uphold_persian_literature_and_art = {
+        prestige = 1.0
+    }
+    defending_the_gates_of_persia = {  #There is a specific place called the "Persian Gates", but i'm referring to defending all points of access to Persia and even its interior; like, protecting it at all costs
+        war_exhaustion = -0.02
+    }
+}
+
+ROZ_ideas = {
+    start = {
+        caravan_power = 0.25
+        shock_damage = 0.10
+    }
+
+    bonus = {
+        trade_efficiency = 0.15
+    }
+
+    trigger = {
+        tag = ROZ
+    }
+
+    free = yes        #will be added at load.
+
+    succeed_the_mutapa_people = {
+        legitimacy = 1.0
+    }
+    new_zimbabwes = {  #Zimbabwes were basically the great cities that the Rozvi Chiefs constructed
+        prestige = 1.0
+        development_cost = -0.10
+    }
+    feared_raiders_and_plunderers = {
+        siege_ability = 0.10
+        loot_amount = 0.25
+    }
+    military_strategists_of_the_rozvi = {   #They are said to have been great military strategists by the Portuguese despite not using gunpowder weapons
+        army_tradition = 1.0
+    }
+    control_of_the_gold_trade = {  
+        inflation_reduction = 0.10
+    }
+    import_firearms = {  #They did import firearms but they still weren't fully integrated into the military, so they don't get like +10% Fire Damage
+        infantry_power = 0.10
+    }
+    centralize_the_shona_states = {  #The region was continually divided into small city-states after the rise and fall of kingdoms and empires, so the Rozvi would naturally try to rein them in over time
+        global_manpower_modifier = 0.25
+    }
+}
+
+ZMB_ideas = {
+    start = {
+        development_cost = -0.10
+        build_cost = -0.20
+    }
+
+    bonus = {
+        trade_efficiency = 0.15
+    }
+
+    trigger = {
+        tag = ZMB
+    }
+
+    free = yes        #will be added at load.
+
+    reformation_of_societal_classes = {  #Originally had a three-tier system of classes in society that was quite rigid
+        global_manpower_modifier = 0.25
+    }
+    elaborate_stoneworks = {  #They constructed elaborate stone buildings and walls during their time in power
+        prestige = 1.0
+        defensiveness = 0.10
+    }
+    tributaries_of_great_zimbabwe = {
+        vassal_income = 0.25
+        diplomatic_upkeep = 1
+    }
+    the_gold_ivory_and_mineral_trade = { 
+        caravan_power = 0.30
+    }
+    utilize_iron_weaponry = {  #They mined minerals like gold, copper, and iron, so naturally as time goes on they would use these iron deposits for their military (coupled with gunpowder of course)
+        fire_damage = 0.10
+    }
+    reunite_the_zimbabwe_fragments = {  #Basically retaking the old lands of the Kingdom of Zimbabwe
+        unjustified_demands = -0.20
+        province_warscore_cost = -0.10
+    }
+    reverse_the_collapse = {  #Making Great Zimbabwe back into a thriving economic center
+        legitimacy = 1
+    }
+}
+
+KMA_ideas = {
+    start = {
+        hostile_attrition = 1
+        global_trade_power = 0.10
+    }
+    
+    bonus = {
+        trade_steering = 0.25
+    }
+    
+    trigger = {
+        tag = KMA
+    }
+    free = yes        #will be added at load.
+    
+    transform_parts_of_the_land  = {  #Transforming forests into grasslands for farming and pastures
+        global_trade_goods_size_modifier = 0.10
+    }
+    trade_hub_for_many = {
+        naval_tradition_from_trade = 1.0
+        trade_efficiency = 0.15
+    }
+    forest_fighting_tactics = {
+        shock_damage = 0.05
+        shock_damage_received = -0.05
+    }
+    gunpowder_imports_to_madagascar = {
+        infantry_power = 0.10
+    }
+    naturalistic_defenses = {  #Madagascar was one of the last places where humans settled on to, so it's got a lot of wildlife
+        defensiveness = 0.20
+    }
+    indian_ocean_dominance = {
+        navy_tradition = 0.50
+        naval_morale = 0.15
+    }
+    centralized_island_administration = {
+        global_autonomy = -0.05
+    }
+}
+
+AUH_ideas = {
+    start = {
+        legitimacy = 1
+        global_manpower_modifier = 0.30
+    }
+    
+    bonus = {
+        army_tradition = 1.0
+    }
+    
+    trigger = {
+        tag = AUH
+    }
+    free = yes
+    
+    sake_of_defense_and_foreign_affairs = {
+        global_autonomy = -0.05
+    }
+    parliaments_and_ministries = {
+        state_maintenance_modifier = -0.20
+        max_states = 3
+    }
+    military_history_against_ottomans = {
+        discipline = 0.05
+    }
+    organize_and_structure_the_military = {
+        global_regiment_cost = -0.10
+        global_regiment_recruit_speed = -0.10
+    }
+    solidify_austrian_banking = {
+        inflation_reduction = 0.10
+    }
+    refine_the_foreign_ministry = {
+        diplomatic_reputation = 1
+    }
+    cosmopolitan_administrative_measures = {  #Basically striving to represent more of the people in the empire and also keep loyal elements satisfied from all parts of the empire
+        advisor_cost = -0.10   
+        manpower_recovery_speed = 0.10
+    }
+}
+
+ZET_ideas = {
+    start = {
+        manpower_recovery_speed = 0.15  #An original carry over tradition from Serbia
+        advisor_pool = 1
+    }
+    
+    bonus = {
+        infantry_power = 0.10  #Carry over ambition
+    }
+    
+    trigger = {
+        tag = ZET
+    }
+    free = yes
+    
+    the_various_ruling_families = {
+        same_culture_advisor_cost = -0.20
+    }
+    start_of_the_balsic_family = {
+        legitimacy = 1
+    }
+    opportunity_on_the_coast = {
+        trade_efficiency = 0.10
+        global_prov_trade_power_modifier = 0.05
+    }
+    ambitions_of_us_petty_lords = {
+        province_warscore_cost = -0.10
+    }
+    manage_internal_family_affairs = {
+        harsh_treatment_cost = -0.25
+    }
+    regimented_and_organized_military = {
+        land_maintenance_modifier = -0.10
+    }
+    serbia_must_be_united = {
+        land_morale = 0.15     
+    }
+}
+
+LAZ_ideas = {
+    start = {
+        manpower_recovery_speed = 0.15  #An original carry over tradition from Serbia
+        land_forcelimit_modifier = 0.20
+    }
+    
+    bonus = {
+        infantry_power = 0.10  #Carry over ambition
+    }
+    
+    trigger = {
+        tag = LAZ
+    }
+    free = yes
+    
+    chains_of_shady_deals = {
+        diplomatic_upkeep = 1
+        spy_offence = 0.10
+    }
+    administrative_headstart = {
+        free_adm_policy = 1
+    }
+    prevent_future_raids = {
+        defensiveness = 0.10
+    }
+    novo_brdo_and_rudnik_mines = {
+        production_efficiency = 0.10
+    }
+    working_into_foreign_states = {
+        diplomatic_reputation = 1
+    }
+    defeat_the_regional_lords = {
+        province_warscore_cost = -0.10
+    }
+    serbia_must_be_united = {
+        land_morale = 0.15     
+    }
+}
+
+SEE_ideas = {
+    start = {
+        manpower_recovery_speed = 0.15  #An original carry over tradition from Serbia
+        land_maintenance_modifier = -0.10
+    }
+    
+    bonus = {
+        infantry_power = 0.10  #Carry over ambition
+    }
+    
+    trigger = {
+        tag = SEE
+    }
+    free = yes
+    
+    resist_feudal_anarchy = {
+        global_autonomy = -0.05
+        stability_cost_modifier = -0.10
+    }
+    revise_dusans_code = {
+        global_unrest = -1
+    }
+    lucrative_serbian_trade = {
+        global_own_trade_power = 0.15
+    }
+    formalize_the_mercenary_sector = {
+        mercenary_cost = -0.15
+    }
+    versatile_cavalry_tactics = {
+        cavalry_power = 0.15
+    }
+    reform_the_irregulars = {
+        drill_gain_modifier = 0.25
+        army_tradition = 1.0
+    }
+    old_glory_renewed_in_serbia = {
+        core_creation = -0.15     
+    }
+}
+
+VEL_ideas = {
+    start = {
+        manpower_recovery_speed = 0.15  #An original carry over tradition from Serbia
+        prestige = 1.0
+    }
+    
+    bonus = {
+        infantry_power = 0.10  #Carry over ambition
+    }
+    
+    trigger = {
+        tag = VEL
+    }
+    free = yes
+    
+    memory_of_the_peoples_crusade = {
+        global_manpower_modifier = 0.20
+    }
+    sight_of_balkan_clashes = {
+        defensiveness = 0.15
+    }
+    learn_from_the_serbian_fall = {
+        army_tradition_decay = -0.01
+    }
+    resisting_foreign_sieges = {
+        fort_maintenance_modifier = -0.10
+        garrison_size = 0.20
+    }
+    the_work_of_mercenaries = {
+        mercenary_cost = -0.15
+    }
+    form_a_seat_of_administration = {
+        global_unrest = -1
+    }
+    serbia_must_be_united = {
+        land_morale = 0.15     
+    }
+}
+
+PRI_ideas = {
+    start = {
+        manpower_recovery_speed = 0.15  #An original carry over tradition from Serbia
+        diplomatic_reputation = 1
+    }
+    
+    bonus = {
+        infantry_power = 0.10  #Carry over ambition
+    }
+    
+    trigger = {
+        tag = PRI
+    }
+    free = yes
+    
+    age_old_struggle_against_nobles = {
+        army_tradition_decay = -0.01
+    }
+    consolidate_power_in_prilep = {
+        legitimacy = 1
+    }
+    reclaim_title_over_serbs_and_greeks = {
+        diplomatic_upkeep = 1
+        fabricate_claims_cost = -0.25
+    }
+    reclaim_what_was_lost = {
+        core_creation = -0.10
+    }
+    revenge_for_king_markos = {  #Nobles and such rallying to the cause of avenging his death and defeat against all enemies, most of all the Turks
+        free_leader_pool = 1
+    }
+    restructure_serbian_land_holdings = {  #Avoid the nobles attempting to seize power and land once again
+        global_autonomy = -0.05
+    }
+    serbia_must_be_united = {
+        land_morale = 0.15     
+    }
+}
+
+KOG_ideas = {
+	start = {
+		land_morale = 0.15
+		diplomatic_reputation = 1
+	}
+
+	bonus = {
+		core_creation = -0.20
+	}
+
+	trigger = {
+		tag = KOG
+	}
+	free = yes
+
+	heart_of_the_holy_see = {
+		prestige = 0.05
+		prestige_decay = -0.01
+	}
+	home_of_christianity = {
+		tolerance_own = 2
+		global_missionary_strength = 0.015
+	}
+	seat_of_power = {
+		technology_cost = -0.05
+		idea_cost = -0.05
+	}
+	foe_with_a_thousand_swords = {
+		global_manpower_modifier = 0.2
+	}
+	abandoned_by_their_lords = {
+		improve_relation_modifier = 0.2
+	}
+	path_to_damnation = {
+		free_policy = 1
+	}
+	papal_battalions = {
+		discipline = 0.05
+	}
+}

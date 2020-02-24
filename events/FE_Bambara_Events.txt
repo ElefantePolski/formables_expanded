@@ -1,0 +1,41 @@
+namespace = FE_bambara
+
+country_event = {
+	id = FE_bambara.1
+	title = FE_bambara.1.t
+	desc = FE_bambara.1.d
+	picture = CENTRAL_AFRICAN_COURT_eventPicture
+
+	trigger = {
+		1123 = { 
+			culture = bambara
+			religion = shamanism
+		}
+		owns_core_province = 1123
+		dominant_culture = bambara
+		dominant_religion = shamanism
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FE_bambara.1
+
+		change_tag = BAM
+		change_religion = shamanism
+		ROOT = { set_capital = 1123 }
+		1123 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { religion = shamanism }
+			}
+			add_base_manpower = -1
+		}
+	}
+}

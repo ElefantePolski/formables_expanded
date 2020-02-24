@@ -1,0 +1,7 @@
+spriteTypes = {
+ spriteType = {
+        name = "COMMUNISM_eventPicture"
+        texturefile = "gfx/event_pictures/COMMUNISM_eventPicture.dds"
+        alwaystransparent = yes
+    }
+}

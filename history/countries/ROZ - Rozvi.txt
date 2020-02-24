@@ -1,0 +1,5 @@
+government = tribal_kingdom
+technology_group = central_african
+religion = shamanism
+primary_culture = shona
+capital = 1185
