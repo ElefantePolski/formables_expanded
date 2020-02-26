@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = uzbehk
+add_accepted_culture = khorasani 
+add_accepted_culture = persian
+technology_group = muslim
+fixed_capital = 446 # Cannot move capital away from this province & no power cost to move to it
