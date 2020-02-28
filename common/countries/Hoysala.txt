@@ -1,0 +1,4 @@
+#Country Name: Please see filename.
+graphical_culture = indianfx
+
+color = { 166 34 147 }
